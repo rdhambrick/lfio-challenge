@@ -1,5 +1,6 @@
 package code.rdh.lfiochallenge;
 
+import java.io.OutputStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -21,6 +22,11 @@ public class Application {
     @Bean
     public String managersEndpoint() {
         return "https://609aae2c0f5a13001721bb02.mockapi.io/lightfeather/managers";
+    }
+
+    @Bean
+    public OutputStream employeeInformationOutputStream() {
+        return System.out;
     }
 
 }
