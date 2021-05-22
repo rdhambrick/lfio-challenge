@@ -20,11 +20,6 @@ public class Application {
     }
 
     @Bean
-    public String managersEndpoint() {
-        return "https://609aae2c0f5a13001721bb02.mockapi.io/lightfeather/managers";
-    }
-
-    @Bean
     public OutputStream employeeInformationOutputStream() {
         return System.out;
     }
